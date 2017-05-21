@@ -1,28 +1,19 @@
+ @import url('https://fonts.googleapis.com/css?family=Merriweather');
+ 
 
 *{
 	margin: 0;
 	padding: 0;
 }
 
-html, body{
-	height: 100%;
-}
-body{
-	color: rgb(255,255,255);
-	background-color: rgb(32, 33, 33);
-
-}
-
-.wrap{
+footer{
+	background-color: #efefef;
+	bottom: 0;
 	position: absolute;
-	display: table-cell;
-	border: 1px solid red;
 	width: 100%;
 	left: 0;
+	height: 35px;
+	text-align: center;
+	font-size: 15px;
 	padding: 5px;
-	height: 100%;
-}
-.quote-container{
-	top: 30%;
-	border: 1px solid red;
 }
