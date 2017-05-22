@@ -1,19 +1,84 @@
  @import url('https://fonts.googleapis.com/css?family=Merriweather');
- 
-
+ @import url('https://fonts.googleapis.com/css?family=Unna');
+ @import url('https://fonts.googleapis.com/css?family=Arvo');
 *{
 	margin: 0;
 	padding: 0;
 }
 
+body{
+	font-family: 'Arvo', sans-serif;
+	background-color: #000d1a;
+	/*background-color: rgb(0, 221, 153);*/
+	color: #fff;
+}
+
+
+article{
+	width: 100%;
+	top: 100%;
+}
+.content{
+	margin-top: 110px;
+	padding: 10px;
+	left: 0;
+	font-size: 22px;
+	border-right: 3px solid #f2f2f2;
+	border-top: 3px solid #ccff66;
+	z-index: 200;
+}
+
+#sideBar{
+	background-color: #004d99;
+	width: 100vh;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	transform: rotate(-90deg);
+	left: 80px;
+	transform-origin: bottom left;
+	padding-left: 30vh;
+	padding-top: 20px;
+}
+button{
+	background-color: #004d99;
+	color: #ccff66;
+}
+
+p#rotate{
+	color: #ffcc00;
+	letter-spacing: 5px;
+}
+.rounded{
+	border-radius: 50%;
+	border: 1px solid #ccff66;
+	z-index: 200;
+	height: 33px;
+	width: 33px;
+	margin-top: 40px;
+}
+
 footer{
-	background-color: #efefef;
 	bottom: 0;
 	position: absolute;
 	width: 100%;
 	left: 0;
-	height: 35px;
+	right: 0;
 	text-align: center;
-	font-size: 15px;
+	font-size: 12px;
 	padding: 5px;
+	letter-spacing: 1px;
+	color: #e6e6e6;
+}
+.fa-heart{
+	color: rgba(255,0,0,0.9);
+}
+.fa-free-code-camp{
+	color: green;
+}
+
+@media screen and (max-width: 480px) {
+	p#rotate{
+		display: none;
+	}
 }
