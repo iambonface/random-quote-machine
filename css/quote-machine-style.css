@@ -11,6 +11,7 @@ body{
 	background-color: #000d1a;
 	/*background-color: rgb(0, 221, 153);*/
 	color: #fff;
+
 }
 
 
@@ -70,11 +71,35 @@ footer{
 	letter-spacing: 1px;
 	color: #e6e6e6;
 }
+.social i{
+	margin: 5px 6px;
+}
 .fa-heart{
 	color: rgba(255,0,0,0.9);
 }
 .fa-free-code-camp{
 	color: green;
+}
+.fa-twitter{
+	color: #0099ff;
+	transition: all 1s ease;
+}
+.fa-twitter:hover{
+	transform: rotate(45deg);
+}
+.fa-facebook{
+	color: #003399;
+	transition: all 2s ease;
+
+}
+
+.fa-facebook:hover{
+	transform: rotate3d(1, -7, 1, 180deg);
+	color: #ff0000;
+}
+
+.share{
+	font-size: 16px;
 }
 
 @media screen and (max-width: 480px) {
