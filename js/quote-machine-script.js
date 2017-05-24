@@ -5,11 +5,21 @@
  * Web: https://www.linkedin.com/in/bonface/
  */
 
+ 		$("#shareText").hide();
+ 		$("#facebookIcon").hide();
+ 		$("#twitterIcon").hide();
+
  	$(document).ready(function(){
 
- 		function getQuoteAPI(){
+  		var startQuote = "I want to live my life in such a way that when I get out of bed in the morning, the devil says, \"aw shit, he's up!\"";
+ 		var startAuthor = "Steve Maraboli";
 
- 			var root = 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=1';
+ 		$("#quote").html(startQuote);
+ 		$("#author").html(startAuthor);
+
+  		function getQuoteAPI(){
+
+ 			var root = 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=1'; 			
 
  			$.ajax({
 
@@ -25,7 +35,21 @@
  				success: function(data){
 
  					$(data).each(function(index, value){
- 						console.log(value.quote);
+ 						//console.log(value.quote);
+ 						var q = value.quote;
+ 						var a = value.author;
+
+ 						var username = "iambonface";
+ 						var hashtags = "quotes";
+
+
+ 						$("#quote").html(q);
+ 						$("#author").html(a);
+
+ 						$("#twitterIcon").attr("href", 'https://twitter.com/intent/tweet?text=' 
+ 							+ encodeURIComponent('"' + q + '"') +"%20—" 
+ 							+ encodeURIComponent(a) +"&hashtags=" + hashtags +"&via=" + username);
+
  					});
  				}
  			});
@@ -33,9 +57,22 @@
 
  		}
 
- 		$("#btnQuote").click(function(){
 
+
+ 		 		
+ 		$("#btnQuote").click(function(){
+ 		
  			getQuoteAPI();
 
+ 			$("#shareText").show();
+ 			$("#facebookIcon").show();
+ 			$("#twitterIcon").show();
+
+
  		});
+
+
+ 		
+
+
  	});

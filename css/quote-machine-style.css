@@ -1,3 +1,11 @@
+ /* ----------------------------------------------------
+Stylesheet for Random Quote Machine [A freeCodeCamp Project ]
+version 1.0
+author: Bonface Mudiri
+email: tastywebapps@gmail.com
+webpage: https://www.linkedin.com/in/bonface/
+-------------------------------------------------------*/
+
  @import url('https://fonts.googleapis.com/css?family=Merriweather');
  @import url('https://fonts.googleapis.com/css?family=Unna');
  @import url('https://fonts.googleapis.com/css?family=Arvo');
@@ -13,8 +21,6 @@ body{
 	color: #fff;
 
 }
-
-
 article{
 	width: 100%;
 	top: 100%;
@@ -40,10 +46,6 @@ article{
 	transform-origin: bottom left;
 	padding-left: 30vh;
 	padding-top: 20px;
-}
-button{
-	background-color: #004d99;
-	color: #ccff66;
 }
 
 p#rotate{
@@ -71,9 +73,7 @@ footer{
 	letter-spacing: 1px;
 	color: #e6e6e6;
 }
-.social i{
-	margin: 5px 6px;
-}
+
 .fa-heart{
 	color: rgba(255,0,0,0.9);
 }
@@ -81,29 +81,41 @@ footer{
 	color: green;
 }
 .fa-twitter{
-	color: #0099ff;
-	transition: all 1s ease;
+	color: #fff;
+	transition: all 0.1s ease;
+	font-size: 15px;
 }
-.fa-twitter:hover{
-	transform: rotate(45deg);
-}
-.fa-facebook{
-	color: #003399;
+
+
+.btn-default{
+	background-color: #0084b4;
 	transition: all 2s ease;
-
+	border: none;
 }
 
-.fa-facebook:hover{
-	transform: rotate3d(1, -7, 1, 180deg);
-	color: #ff0000;
+.btn-default:hover{
+	background-color: green;
+	color: #fff;
 }
 
 .share{
-	font-size: 16px;
+	font-size: 15px;
 }
 
-@media screen and (max-width: 480px) {
-	p#rotate{
-		display: none;
-	}
+.twitter-icon{
+	padding: 2px;
+	letter-spacing: 2px;
+	color: #fff;
+	text-decoration: none;
 }
+footer a {
+	color: #ccff66;
+	text-decoration: none;
+	transition: all 4s ease;
+}
+
+footer a:hover{
+	color: green;
+	text-decoration: none;
+}
+

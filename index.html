@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Random Quote Machine</title>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Bonface Mudiri">
+
+	<title>Random Quote Machine</title>
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
 
 	<!-- ======== Latest compiled and minified CSS ======= -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -10,6 +17,7 @@
 	<!-- ======== Font Awesome minified css ======= -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<!-- ======== custom css ======= -->
 	<link rel="stylesheet" type="text/css" href="./css/quote-machine-style.css">
 
 </head>
@@ -21,45 +29,49 @@
 
 		<article>
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3  col-xs-12 content">
-				<sup><i class="fa fa-quote-left"></i></sup> <span id="quote"></span>
-				<br>
-				<br>
-				<p class="pull-right"><span>&#8212 </span><em id="author"></em></p>
-				<br>
-				<br>
+				<div id="quoteBox" class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3  col-xs-12 content">
+					<sup><i class="fa fa-quote-left"></i></sup> <span id="quote"></span>
+					<br>
+					<br>
+					<p class="pull-right"><span>&#8212 </span><em id="author"></em></p>
+					<br>
+					<br>
 
-				<div class="pull-left social">
-					<span class="share">Share on <i class="fa fa-share-alt"></i></span><a id="twitterIcon" href=""><i class="fa fa-twitter"></i></a>
+					<div class="pull-left social">
+						<span id="shareText" class="share hidden-el">Share this <i class="fa fa-share-alt"></i></span>
 
-					<span><a id="facebookIcon" href=""><i class="fa fa-facebook"></i></a></span>				
+						<a class="twitter-icon btn btn-default" id="twitterIcon" 
+						data-text="" href=""><i id="twitter" class="fa fa-twitter"></i>tweet</a>
+
+					</div>
+
+					<a id="btnQuote" class="btn btn-primary pull-right"> New Quote</a>
 				</div>
-				<button id="btnQuote" class="btn btn-defualt pull-right"> New Quote</button>
-
-				</div>
-	
 			</div>
 
 
-
 		</article>
+
 		<div class="pull-right rounded">
 			<span id="stroke">-|-</span>
 		</div>
 
 		<footer>
-				<div class="col-md-4">A freeCodeCamp <i class="fa fa-free-code-camp"></i> Project</div>
-				<div class="col-md-4">Built with <i class="fa fa-heart"></i> by Bonface Mudiri</div>
-				<div class="col-md-4">&copy Copyright 2017</div>
+			<div class="col-md-4">A freeCodeCamp <i class="fa fa-free-code-camp"></i> Project</div>
+
+			<div class="col-md-4">Built with <i class="fa fa-heart"></i> by <a href="https://twitter.com/iamBonface" target="_blank"><strong>Bonface Mudiri</strong></a></div>
+
+			<div class="col-md-4">&copy Copyright 2017</div>
 		</footer>
 		
 	</div>
 
 
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- fallback jquery -->
+    <!-- fallback jQuery -->
     <script>
     	if (!window.jQuery){
     		document.write('<script src="./js/jquery-min.js"><\/script>');
@@ -69,8 +81,11 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- Include Quote machine script -->
+    <!-- Quote machine custom script -->
     <script src="./js/quote-machine-script.js"></script>
+
+    <!--  twitter widgets plugin -->
+    <script src="https://platform.twitter.com/widgets.js"></script>
 
 </body>
 </html>
