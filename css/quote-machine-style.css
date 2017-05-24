@@ -29,7 +29,7 @@ article{
 	margin-top: 110px;
 	padding: 10px;
 	left: 0;
-	font-size: 22px;
+	font-size: 20px;
 	border-right: 3px solid #f2f2f2;
 	border-top: 3px solid #ccff66;
 	z-index: 200;
@@ -119,3 +119,22 @@ footer a:hover{
 	text-decoration: none;
 }
 
+
+@media screen and (max-width: 480px){
+	#sideBar{
+		height: 35px;
+		left: 35px;
+	}
+
+	p#rotate{
+		display: none;
+	}
+
+	#quote, #author{
+		font-size: 18px;
+	}
+	#btnQuote{
+		font-size: 12px;
+	}
+
+}
