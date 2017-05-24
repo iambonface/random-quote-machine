@@ -1,7 +1,9 @@
 
 ## A freeCodeCamp Random Quote Machine Challenge
 
-    This app consumes an API endpoint and randomly displays a famous quote and author when user clicks the 'new quote' button.
+    This app consumes an API endpoint and randomly displays a famous quote and author 
+    when user clicks the 'new quote' button.
+    
     The app has capability to share the random generated quote via a twitter tweet button. 
 
 ## User Stories and Challenge Requirements
