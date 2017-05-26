@@ -27,12 +27,15 @@ article{
 }
 .content{
 	margin-top: 110px;
-	padding: 10px;
+	padding: 12px;
 	left: 0;
 	font-size: 20px;
 	border-right: 3px solid #f2f2f2;
 	border-top: 3px solid #ccff66;
 	z-index: 200;
+}
+.main{
+	padding: 0;
 }
 
 #sideBar{
@@ -85,6 +88,9 @@ footer{
 	transition: all 0.1s ease;
 	font-size: 15px;
 }
+.fa-share-alt{
+	margin-right: 2px;
+}
 
 
 .btn-default{
@@ -103,7 +109,7 @@ footer{
 }
 
 .twitter-icon{
-	padding: 2px;
+	padding: 5px;
 	letter-spacing: 2px;
 	color: #fff;
 	text-decoration: none;
@@ -119,11 +125,20 @@ footer a:hover{
 	text-decoration: none;
 }
 
+#btnQuote{
+	transition: all 2s ease;
+	font-size: 14px;
+	margin-top: 18px;
+	padding: 8px;
+}
+#btnQuote:hover{
+	background-color: green;
+}
 
 @media screen and (max-width: 480px){
 	#sideBar{
-		height: 35px;
-		left: 35px;
+		height: 18px;
+		left: 18px;
 	}
 
 	p#rotate{
@@ -131,10 +146,25 @@ footer a:hover{
 	}
 
 	#quote, #author{
-		font-size: 18px;
+		font-size: 15px;
 	}
 	#btnQuote{
 		font-size: 12px;
+		margin-top: 18px;
+		padding: 5px;
 	}
+
+	.share{
+	font-size: 12px;
+	}
+
+	#shareText{
+		left: 0;
+	}
+	.twitter-icon {
+		padding: 2px;
+	}
+
+
 
 }
